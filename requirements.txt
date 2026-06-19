@@ -1,0 +1,7 @@
+﻿Django==5.1.4
+python-decouple
+gunicorn
+djangorestframework
+django-cors-headers
+django-filter==24.3
+djangorestframework-simplejwt
