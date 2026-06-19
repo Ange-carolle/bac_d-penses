@@ -1,0 +1,11 @@
+﻿services:
+  - type: web
+    name: bac-depenses-api
+    runtime: python
+    buildCommand: ./build.sh
+    startCommand: gunicorn Expenses.wsgi
+    envVars:
+      - key: SECRET_KEY
+        value: django-insecure-cle-generee-automatiquement-pour-le-bac-2026
+      - key: DEBUG
+        value: False
